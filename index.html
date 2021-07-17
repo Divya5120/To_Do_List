@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Hind&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="To_Do_CSS.css">
+    <script src="https://kit.fontawesome.com/a81368914c.js"></script> 
+    <title>To Do List</title>
+</head>
+<body>
+    <h1><span class="styling">TODO</span> List  <i class="fas fa-list-ul"></i></h1>
+    <div class="todoListContainer">
+        <div class="input_div">
+            <input class="input" type="text" placeholder="What do you want to do...">
+            <select name="priority" id="priority">
+                <option value="low">Low</option>
+                <option value="medium">Medium</option>
+                <option value="high">High</option>
+            </select>
+            <button class="addButton"><i class="fas fa-plus"></i></button>
+        </div>
+        <div class="container"></div> 
+
+        <div class="end">
+            <button onclick="lowFunction()" class="btn-low">Low</button>
+            <button onclick="mediumFunction()" class="btn-medium">Medium</button>
+            <button onclick="highFunction()" class="btn-high">High</button>
+            <button onclick="allFunction()" class="btn-all">All</button>
+
+        </div>
+    </div>
+    <script src="To_Do_Js.js"></script>
+    <footer>
+        <p>TODO : Life in the moment <i class="far fa-laugh-wink"></i><p>
+    </footer>
+</body>
+</html>
